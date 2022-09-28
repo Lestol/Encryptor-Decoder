@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шифратор - Дешифратор</title>
+  <link rel="stylesheet" href="caesar.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header-name">Шифр Цезаря</h1>
+    <nav class="navigation">
+      <a tabindex="5" href="vernam.html">Шифр Вернама</a>
+      <span>|</span>
+      <a tabindex="6" href="#">Шифр Цезаря</a>
+    </nav>
+  </header>
+
+  <main class="main-screen">
+    <section class="main-content">
+      <section class="encryptor-decoder">
+
+        <h2 class="encryptor-decoder-title">Шифратор - дешифратор</h2>
+        <section class="encryptor">
+          <label for="in">Ваш текст: </label>
+          <textarea placeholder="Напишите что-нибудь" tabindex="1" rows="3" type="text" id="in"></textarea>
+          <label for="out">Ключ: </label>
+          <textarea placeholder="Ключ" tabindex="2" rows="3" id="out"></textarea>
+        </section>
+
+        <section class="decoder">
+          <label for="out2">Ключ: </label>
+          <textarea placeholder="Ключ" tabindex="3" rows="3" type="text" id="out2"></textarea>
+          <label for="out3">Зашифрованный текст: </label>
+          <textarea placeholder="Ваш зашифрованный текст" tabindex="4" rows="3" id="out3"></textarea>
+        </section>
+
+      </section>
+    </section>
+	  <!-- <p id="help"></p> -->
+  </main>
+
+  <footer class="footer">
+    <span class="copyright">Коровин Даниил. Исп-320п.</span>
+    <span class="year">2022 год</span>
+  </footer>
+
+  <script src="caesar.js"></script>
+</body>
+</html>

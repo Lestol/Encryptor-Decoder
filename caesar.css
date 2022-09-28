@@ -1,0 +1,98 @@
+html {
+  height: 100%;
+  font-size: large;
+}
+
+body {
+  width: 800px;
+  margin: 0 auto;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,0.5444300164116753) 0%, rgba(46,135,157,0.6064061610972514) 100%);
+}
+
+textarea {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,0.5444300164116753) 0%, rgba(46,135,157,0.6064061610972514) 100%);
+  color: wheat;
+}
+
+textarea::placeholder {
+  color: wheat;
+}
+
+label {
+  padding-top: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  text-align: center;
+  /* background-color: red; */
+  width: 800px;
+  margin:0 auto;
+  margin-bottom: 150px;
+}
+
+.header-name {
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.navigation {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.encryptor-decoder {
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 1em;
+  width: 700px;
+  margin: 0 auto;
+  
+}
+
+.encryptor {
+  display: grid;
+  margin-bottom: 35px;
+}
+
+.decoder {
+  display: grid;
+}
+
+.encryptor-decoder-title {
+  text-align: center;
+  margin-block-end: 10px;
+  margin-block-start: 10px;
+}
+
+.footer {
+  /* background-color: yellow; */
+  height: 50px;
+  width: 800px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 8px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.encryptor-decoder-title {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 4px;
+}
