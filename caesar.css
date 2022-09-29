@@ -1,6 +1,6 @@
 html {
   height: 100%;
-  font-size: large;
+  font-size: x-large  ;
 }
 
 body {
@@ -21,6 +21,7 @@ textarea {
 
 textarea::placeholder {
   color: wheat;
+  font-size: large;
 }
 
 label {
