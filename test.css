@@ -1,9 +1,0 @@
-.outer {
-  display: flex;
-  height: 60em;
-}
-
-.inner {
-  width: max-content;
-  margin: auto;
-}
