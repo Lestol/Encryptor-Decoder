@@ -1,5 +1,6 @@
 // variables for original message, encrypted and encryption key
-let input, output, key;
+let input;
+let output, key;
 // service variables for the cipher
 let inp, k;
 
@@ -9,14 +10,18 @@ function getRandomInt(min, max) {
 }
 
 // request text to be encrypted
-input = prompt('Введите исходный текст', '');
+input = prompt('Введите исходный текст:', '');
+document.getElementById('message').innerHTML = input;
+
 
 // request the encryption key
-key = prompt('Введите ключ', '');
+key = prompt('Введите ключ:', '');
+document.getElementById('key').innerHTML = key;
+
 
 // if the key length is less than the message length, we tell the user and generate our own key
 if ((key.length) < (input.length)) {
-  alert('Ключ короче сообщения, это не безопасно. Скопируйте новый сгенерированнный ключ из консоли брузера.')
+  alert('Ключ короче сообщения, это не безопасно. Скопируйте новый сгенерированнный ключ')
 
   // at the very beginning the key will be empty
   key = '';
