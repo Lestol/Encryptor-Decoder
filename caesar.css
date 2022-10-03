@@ -25,6 +25,7 @@ textarea::placeholder {
 }
 
 label {
+  text-align: left;
   padding-top: 15px;
 }
 
