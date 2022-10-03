@@ -5,15 +5,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Шифратор - Дешифратор</title>
+  <link rel="stylesheet" href="vernam.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="vernam.html">Шифр Вернама</a>
-      <a href="caesar.html">Шифр Цезаря</a>
+  <header class="header">
+    <h1 class="header-name">Шифр Вернама</h1>
+    <nav class="navigation">
+      <a tabindex="4" href="#">Шифр Вернама</a>
+      <span>|</span>
+      <a tabindex="5" href="caesar.html">Шифр Цезаря</a>
     </nav>
-  </header>
 
+  <main class="main-screen">
+    <section class="main-content">
+      <section class="encryptor-decoder">
+
+        <h2 class="encryptor-decoder-title">Шифратор - дешифратор</h2>
+        <section class="encryptor">
+          <label for="message">Ваш текст: </label>
+          <textarea placeholder="Ваш текст" name="message" tabindex="1" id="message" rows="3"></textarea>
+          <label for="key">Ключ: </label>
+          <textarea name="key" tabindex="2" placeholder="Ключ" rows="3" id="key"></textarea>
+          <label for="output">Сообщение: </label>
+          <textarea name="message" tabindex="3" placeholder="Сообщение" id="output" rows="3"></textarea>
+        </section>
+
+      </section>
+    </section>
+
+    <footer class="footer">
+      <span class="copyright">Коровин Даниил. Исп-320п.</span>
+      <span class="year">2022 год</span>
+    </footer>
+
+  </main>
   <script src="vernam.js"></script>
 </body>
 </html>
