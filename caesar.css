@@ -20,6 +20,7 @@ textarea {
   background: linear-gradient(90deg, rgba(2,0,36,0.5444300164116753) 0%, rgba(46,135,157,0.6064061610972514) 100%);
   color: wheat;
   resize: none;
+  border-radius: 8px;
 }
 
 textarea::placeholder {
@@ -44,7 +45,6 @@ a {
 
 .header {
   text-align: center;
-  /* background-color: red; */
   width: 800px;
   margin:0 auto;
   margin-bottom: 150px;
