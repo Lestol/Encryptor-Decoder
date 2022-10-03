@@ -1,6 +1,5 @@
 // variables for original message, encrypted and encryption key
-let input;
-let output, key;
+let input, output, key;
 // service variables for the cipher
 let inp, k;
 
@@ -25,6 +24,7 @@ if ((key.length) < (input.length)) {
 
   // at the very beginning the key will be empty
   key = '';
+  document.getElementById('key').innerHTML = key;
 
   // generate a new key of the same length as the message
   for (let i = 0; i < input.length; i++) {
@@ -32,8 +32,7 @@ if ((key.length) < (input.length)) {
   }
 
   // output a new encryption key
-  console.log('↓↓ Скопируйте новый ключ ↓↓');
-  console.log(key);
+  document.getElementById('key').innerHTML = key;
 }
 
 // encrypt the message
