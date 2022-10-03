@@ -2,7 +2,6 @@ html {
   height: 100%;
   font-size: x-large;
   font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Manrope', sans-serif;
 }
 
 
@@ -20,6 +19,7 @@ textarea {
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,0.5444300164116753) 0%, rgba(46,135,157,0.6064061610972514) 100%);
   color: wheat;
+  resize: none;
 }
 
 textarea::placeholder {
