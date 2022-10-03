@@ -9,18 +9,16 @@ function getRandomInt(min, max) {
 }
 
 // request text to be encrypted
-input = prompt('Введите исходный текст:', '');
+input = prompt('Введите исходный текст', '');
 document.getElementById('message').innerHTML = input;
 
-
 // request the encryption key
-key = prompt('Введите ключ:', '');
+key = prompt('Введите ключ', '');
 document.getElementById('key').innerHTML = key;
-
 
 // if the key length is less than the message length, we tell the user and generate our own key
 if ((key.length) < (input.length)) {
-  alert('Ключ короче сообщения, это не безопасно. Скопируйте новый сгенерированнный ключ')
+  alert('Ключ короче сообщения, это не безопасно. Скопируйте новый сгенерированнный ключ из консоли брузера.')
 
   // at the very beginning the key will be empty
   key = '';
@@ -32,8 +30,10 @@ if ((key.length) < (input.length)) {
   }
 
   // output a new encryption key
-  document.getElementById('key').innerHTML = key;
+  console.log('↓↓ Скопируйте новый ключ ↓↓');
+  console.log(key);
 }
+document.getElementById('key').innerHTML = key;
 
 // encrypt the message
 output = '';
@@ -48,3 +48,4 @@ for (i = 0; i < input.length; i++) {
 // display the result of encryption
 console.log("↓↓ Результат работы алгоритма ↓↓");
 console.log(output);
+document.getElementById('output').innerHTML = output;
